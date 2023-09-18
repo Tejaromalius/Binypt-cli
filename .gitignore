@@ -1,0 +1,6 @@
+# files
+poetry.lock
+vs.code-workspace
+
+# directories
+**/__pycache__/
