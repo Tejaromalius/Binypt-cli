@@ -4,3 +4,4 @@ vs.code-workspace
 
 # directories
 **/__pycache__/
+.ignore/
