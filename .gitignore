@@ -3,5 +3,6 @@ poetry.lock
 vs.code-workspace
 
 # directories
-**/__pycache__/
+dist/
 .ignore/
+**/__pycache__/

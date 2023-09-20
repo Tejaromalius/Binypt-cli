@@ -101,7 +101,11 @@ def run():
         open_date=parsed_arguments["open_date"],
         close_date=parsed_arguments["close_date"],
     )
-    binypt.set_verbosity(show_bar=True, show_log=parsed_arguments["show_log"])
+    show_log = parsed_arguments["show_log"]
+    binypt.set_verbosity(
+        show_bar=not show_log,
+        show_log=show_log
+    )
     binypt.retrieve_data()
     if parsed_arguments["human_readable_time_status"]:
         binypt.add_human_readable_time()
