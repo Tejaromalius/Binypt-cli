@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "binypt-cli"
-version = "1.0.3"
+version = "1.0.4"
 description = "Command line tool for downloading data charts from Binance"
 authors = ["ilia tayefi <tayefi.ilia@protonmail.com>"]
 license = "MIT"

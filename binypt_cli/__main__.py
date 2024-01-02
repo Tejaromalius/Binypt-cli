@@ -41,7 +41,7 @@ def configure_parser(parser):
         required=True,
         dest="open_date",
         type=metadata.date_is_correct_format,
-        help="Start date for data collection (YYYY-MM-DD/HH:mm:ss).",
+        help="Start date for data collection (DD/MM/YYYY-HH:mm:ss).",
     )
 
     parser.add_argument(
@@ -50,7 +50,7 @@ def configure_parser(parser):
         required=True,
         dest="close_date",
         type=metadata.date_is_correct_format,
-        help="End date for data collection (YYYY-MM-DD/HH:mm:ss).",
+        help="End date for data collection (DD/MM/YYYY-HH:mm:ss).",
     )
 
     parser.add_argument(
