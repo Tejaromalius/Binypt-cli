@@ -10,7 +10,7 @@ from binypt import metadata
 def output_path_is_valid(output_path: str):
     if os.path.exists(output_path):
         raise ValueError(f"`{output_path}` is an existing file!")
-    elif re.search("(csv)|(excel)|(pickle)$", output_path) is None:
+    elif re.search("(csv)|(xlsx)|(pickle)$", output_path) is None:
         raise TypeError("Output file format is not valid!")
     else:
         return output_path
@@ -61,7 +61,7 @@ def configure_parser(parser):
         type=output_path_is_valid,
         help="""
         Path to the output file for data storage.
-        Possible formats: .csv, .excel, .pkl""",
+        Possible formats: .csv, .xlsx, .pickle""",
     )
 
     parser.add_argument(
